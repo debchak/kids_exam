@@ -91,6 +91,27 @@
             width: 50px;
             height: 50px;
         }
+
+        /* Responsive design for iPhone 11 */
+        @media (max-width: 414px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+                gap: 10px; /* Reduce gap between items */
+                padding: 10px; /* Reduce padding */
+            }
+            .grid-item {
+                font-size: 16px; /* Adjust font size */
+                padding: 15px; /* Reduce padding */
+            }
+            input[type="number"] {
+                width: 50px; /* Adjust input width */
+                font-size: 14px; /* Adjust font size */
+            }
+            button {
+                font-size: 14px; /* Adjust button font size */
+                padding: 8px 15px; /* Adjust button padding */
+            }
+        }
     </style>
 </head>
 <body>
